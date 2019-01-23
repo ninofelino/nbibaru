@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+        <template id="listing">
+          <t t-call="web.report_layout">   
+            <div id="wrap" class="container">   
+              <div class="panel panel-default">      
+                 <h2>Import Dari Data INV</h2>
+                 <button class="btn btn-primary">Data Variant</button>
+                 <button>Syncron Data</button>
+                 <button>Syncron Data EOD Pertoko</button>
+                 <input class="o_searchview_input" placeholder="Search..." type="text"/>
+                 <li><a id="csv_download" href="felino/dbf" target="_blank" download="file.csv">CSV</a></li>
+                 <li><a id="csv_download" href="felino/product">Upload Product</a></li>
+                 <li><a id="csv_download" href="felino/product">Dot Matrix Printer</a></li>
+              </div>   
+
+              <div class="panel panel-default">
+                <t t-foreach="objects" t-as="object">  
+                <li><span t-esc="object.id"/>
+                <span t-esc="object.article"/>
+                <span t-esc="object.ukuran"/>
+          
+                </li>
+                </t>
+               </div>
+          </div>
+        </t>
+        </template>
+        <template id="inv">
+          <t t-call="web.report_layout">   
+            <div id="wrap" class="container">   
+              <div class="panel panel-default">      
+                 <h2>Import Dari Data INV</h2>
+                 <button class="btn btn-primary">Data Variant</button>
+                 <button>Syncron Data</button>
+                 <button>Syncron Data EOD Pertoko</button>
+                 <input class="o_searchview_input" placeholder="Search..." type="text"/>
+                 <li><a id="csv_download" href="felino/dbf" target="_blank" download="file.csv">CSV</a></li>
+                 <li><a id="csv_download" href="felino/product">Upload Product</a></li>
+                 <li><a id="csv_download" href="felino/product">Dot Matrix Printer</a></li>
+              </div>   
+
+              <div class="panel panel-default">
+                <t t-foreach="objects" t-as="object">  
+                <li><span t-esc="object.id"/>
+                <span t-esc="object.article"/>
+                <span t-esc="object.ukuran"/>
+          
+                </li>
+                </t>
+               </div>
+          </div>
+        </t>
+        </template>
+    </data>
+</odoo>
